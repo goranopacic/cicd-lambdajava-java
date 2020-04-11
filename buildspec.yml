@@ -9,6 +9,7 @@ phases:
      - env
      - mvn clean
      - mvn -Dquarkus.lambda.handler=demo -Dlambdaname=demo install
+     - mvn -Dquarkus.lambda.handler=dynamotest -Dlambdaname=dynamotest install
      - mkdir $S3_LAMBDA_PREFIX
      - mv target/*runner.jar $S3_LAMBDA_PREFIX
 artifacts:
