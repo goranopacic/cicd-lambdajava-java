@@ -1,4 +1,4 @@
-package net.esteh;
+package madabout.cloud;
 
 import java.io.StringReader;
 import java.sql.Connection;
@@ -118,8 +118,6 @@ public class DynamoTestLambda implements RequestHandler<APIGatewayProxyRequestEv
 		return allowOrigin;
 	}
 	
-	private String getRuserId(APIGatewayProxyRequestEvent input) {
-		return "1";
-	}
+
 	
 }
