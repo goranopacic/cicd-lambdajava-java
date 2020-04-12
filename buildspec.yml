@@ -10,7 +10,7 @@ phases:
      - mvn -Dquarkus.lambda.handler=demo -Dlambdaname=demo clean package
      - mvn -Dquarkus.lambda.handler=dynamotest -Dlambdaname=dynamotest clean package
      - mkdir $S3_LAMBDA_PREFIX
-     - mv target/*runner.jar $S3_LAMBDA_PREFIX
+     - mv src/target/*runner.jar $S3_LAMBDA_PREFIX
 artifacts:
   files:
    - $S3_LAMBDA_PREFIX/*runner.jar
